@@ -136,7 +136,7 @@ a{
     background: brown;
     color: whitesmoke;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
     .headerContainer{
         justify-content: space-around;
         flex-direction: column;
@@ -220,3 +220,21 @@ a{
     }
 }
 
+.footer{
+    /* height: 40vh; */
+    margin-top: 10vh;
+    width: 100%;
+    background-color: rgb(206, 204, 204);
+    border-top: 3px solid rgb(167, 163, 163);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.footerBox{
+    width: 30%;
+}
+.footerTitle{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+}
