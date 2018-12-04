@@ -5,6 +5,7 @@ body{
     font-size: 1rem;
     background-image: url(paper-texture.jpg);
 }
+/* Header */
 .header{
     width: 100%;
     display: flex;
@@ -13,11 +14,12 @@ body{
 }
 .headerContainer{
     background-color: #fff;
-    width: 80%;
+    width: 90%;
     height: 40vh;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    border-radius: 0 0 10px 10px;
 }
 .headerTitleHolder{
     display: flex;
@@ -36,7 +38,7 @@ body{
     font-size: 2rem;
 }
 .headerButtonHolder{
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -57,6 +59,7 @@ body{
 }
 @media screen and (max-width: 800px){
     .headerContainer{
+        justify-content: space-around;
         flex-direction: column;
         height: 400px;
     }
@@ -64,8 +67,76 @@ body{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin: 10px 0 0 0;
+        /* margin: 10px 0 0 0; */
         width: 100%;
     }
 
+}
+
+/* Main */
+
+.mainContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px 0 0 0;
+}
+.mainBox{
+    /* width: 30%; */
+    width: 384px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1%;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+}
+.mainBoxImage{
+    width: 384px;
+    height: 304px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+}
+.mbi1{
+    background-image: url(pic01.jpg)
+}
+.mbi2{
+    background-image: url(pic02.jpg)
+}
+.mbi3{
+    background-image: url(pic03.jpg)
+}
+.mainBoxTitle{
+    font-size: 2rem;
+    text-align: center;
+}
+.mainBoxText{
+    font-size: 1.2rem;
+    margin: auto;
+}
+@media screen and (max-width: 1220px){
+    .mainContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainBox{
+        width: 90%;
+        margin: 1vh 0;
+    }
+    .mainBoxImage{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 600px){
+    .mainBox{
+        width: 384px;
+    }
+    .mainBoxImage{
+        width: 384px;
+        height: 304px;
+        background-size: contain;
+    }
 }
