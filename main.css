@@ -7,6 +7,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: black;
 }
 /* Menu */
 .menu{
@@ -46,15 +47,39 @@ a{
 }
 .memuItemHolder{
     width: 40%;
-    
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
 }
+.menuItem{
+    background: rgb(51, 50, 50);
+    border-radius: 3px;
+}
+.menuItem>a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    padding: 3px;
+}
 @media screen and (max-width: 1300px){
+    .memuItemHolder{
+        width: 60%
+    }
     .logo{
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 835px){
+    .menu{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .logo{
+        width: 100%;
+    }
+    .memuItemHolder{
+        width: 100%;
+        justify-content: space-around;
     }
 }
 
@@ -194,3 +219,4 @@ a{
         background-size: contain;
     }
 }
+
