@@ -5,6 +5,60 @@ body{
     font-size: 1rem;
     background-image: url(paper-texture.jpg);
 }
+a{
+    text-decoration: none;
+}
+/* Menu */
+.menu{
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.logoButton{
+    background-color: palevioletred;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 70px;
+    color: aliceblue;
+    font-size: 3rem;
+    font-family: cursive;
+}
+.logoButton:hover{
+    cursor: pointer;
+    /* border: 1px solid blueviolet; */
+    background-color: rgb(89, 89, 199);
+}
+.logoText{
+    font-size: 2rem;
+    text-align: center;
+}
+.memuItemHolder{
+    width: 40%;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+@media screen and (max-width: 1300px){
+    .logo{
+        flex-direction: column;
+    }
+}
+
+
 /* Header */
 .header{
     width: 100%;
@@ -89,7 +143,7 @@ body{
     flex-direction: column;
     margin: 0 1%;
     background: #fff;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
 }
 .mainBoxImage{
     width: 384px;
@@ -112,8 +166,8 @@ body{
     text-align: center;
 }
 .mainBoxText{
-    font-size: 1.2rem;
-    margin: auto;
+    font-size: 1rem;
+    margin:  0  0 0 30px;
 }
 @media screen and (max-width: 1220px){
     .mainContainer{
