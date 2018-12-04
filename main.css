@@ -1,0 +1,71 @@
+html{
+    font-size: 16px;
+}
+body{
+    font-size: 1rem;
+    background-image: url(paper-texture.jpg);
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.headerContainer{
+    background-color: #fff;
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.headerTitleHolder{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+.headerTitle{
+    font-size: 3rem;
+    text-align: center;
+}
+.ht1{
+    color: crimson;
+}
+.ht2{
+    font-size: 2rem;
+}
+.headerButtonHolder{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+.headerButton{
+    width: 300px;
+    height: 80px;
+    margin: 5px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkblue;
+}
+.headerButton:hover{
+    cursor: pointer;
+    background: brown;
+    color: whitesmoke;
+}
+@media screen and (max-width: 800px){
+    .headerContainer{
+        flex-direction: column;
+        height: 400px;
+    }
+    .headerTitleHolder{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+
+}
